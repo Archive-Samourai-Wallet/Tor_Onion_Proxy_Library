@@ -74,6 +74,7 @@ import com.msopentech.thali.toronionproxy.TorConfig;
 import com.msopentech.thali.toronionproxy.TorConfigBuilder;
 import com.msopentech.thali.toronionproxy.TorInstaller;
 import com.msopentech.thali.toronionproxy.Utilities;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.slf4j.Logger;
@@ -125,6 +126,7 @@ public class TorOnionProxySmokeTest  {
      * and see if the client can get connected again.
      */
     @Test
+    @Disabled // TODO
     public void testHiddenServiceRecycleTime() throws Exception {
         String hiddenServiceManagerDirectoryName = "hiddenservicemanager";
         String clientManagerDirectoryName = "clientmanager";
