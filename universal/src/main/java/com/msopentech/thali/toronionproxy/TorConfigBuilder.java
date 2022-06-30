@@ -476,12 +476,6 @@ public final class TorConfigBuilder {
         return !settings.hasTestSocks() ? testSocksDisable() : this;
     }
 
-    @SettingsConfig
-    public TorConfigBuilder torrcCustomFromSettings() throws UnsupportedEncodingException {
-        return settings.getCustomTorrc() != null ?
-                line(new String(settings.getCustomTorrc().getBytes("US-ASCII"))) : this;
-    }
-
     public TorConfigBuilder transPort(String transPort) {
         if (!isNullOrEmpty(transPort))
             buffer.append("TransPort ").append(transPort).append('\n');
@@ -618,5 +612,12 @@ public final class TorConfigBuilder {
             this.type = type;
             this.config = config;
         }
+    }
+
+    // important: keep at bottom to allow overriding all variables
+    @SettingsConfig
+    public TorConfigBuilder torrcCustomFromSettings() throws UnsupportedEncodingException {
+        return settings.getCustomTorrc() != null ?
+                line(new String(settings.getCustomTorrc().getBytes("US-ASCII"))) : this;
     }
 }
