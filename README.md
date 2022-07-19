@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/io.samourai.code.whirlpool/Tor_Onion_Proxy_Library.svg)](https://jitpack.io/#io.samourai.code.whirlpool/Tor_Onion_Proxy_Library)
+
 Tor Onion Proxy Library
 =======================
 NOTE: This project exists independently of the Tor Project.
