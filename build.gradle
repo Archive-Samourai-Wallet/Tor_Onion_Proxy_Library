@@ -1,7 +1,7 @@
 allprojects  {
   apply plugin: 'maven'
   group = 'com.msopentech.thali'
-  version = '0.0.5-samourai'
+  version = '0.0.6-samourai'
 }
 
 subprojects {
