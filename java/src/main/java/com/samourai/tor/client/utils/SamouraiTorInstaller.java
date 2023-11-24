@@ -22,8 +22,8 @@ public final class SamouraiTorInstaller extends TorInstaller {
   private static final Logger LOG = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
   private final TorConfig config;
   private boolean useExecutableFromZip;
-  private File installDir
-          ;
+  private File installDir;
+  public static final String version = "0.0.7";
 
   public SamouraiTorInstaller(String torDir, Optional<File> torExecutable, int fileCreationTimeout)
       throws Exception {

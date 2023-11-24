@@ -4,7 +4,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 group = 'com.msopentech.thali'
-version = '0.0.6-samourai'
+version = '0.0.7-samourai'
 
 repositories {
     mavenLocal()
